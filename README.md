@@ -1,3 +1,3 @@
-# Calculadora Web
+# Calculadora Web.
 
-## Realiza oepraciones sencillas de suma, resta, división y multiplicación.
+## Realiza operaciones de suma, resta, divisón y multiplicación.
