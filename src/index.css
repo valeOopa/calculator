@@ -24,7 +24,7 @@ body{
     padding-bottom: 10px;
 }
 #calculator__screen{
-    background: #2229;
+    background: #2a2a2a99;
     text-align: right;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -54,6 +54,11 @@ body{
     color: #FFF;
     border: none;
     font-size: 26px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 .keysPanel__key:hover{
     cursor: pointer;
@@ -81,4 +86,20 @@ body{
 }
 #keyEqual:hover{
     background:#ee8206 ;
+}
+
+@media screen AND (max-width: 370px) {
+    #calculator{
+        width: 90vw;
+    }
+    #calculator__keysPanel{
+        height: 380px;
+        gap: 6px;
+    }
+    #calculator__keysPanel, #calculator__screen{
+        width: 100%;
+    }
+    .keysPanel__key{
+        width: 100%;
+    }
 }

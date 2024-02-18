@@ -60,9 +60,3 @@ function App() {
 }
 
 export default App
-
-
-/*
-setOperation(keyPress ? operation + k[0] : k[0]);
-        setOperationScreen(keyPress ? operationScreen + k[1] : k[1]);
-*/
