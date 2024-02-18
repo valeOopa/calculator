@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export function ScreenComponent( {operation} ) {
   return (
-    <div>
+    <div id='calculator__screen'>
       {operation}
     </div>
   )

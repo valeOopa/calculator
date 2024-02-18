@@ -49,7 +49,7 @@ function App() {
   }
   
   return (
-    <div>
+    <div id="calculator">
       <ScreenComponent operation={operationScreen} />
       <KeysPanel>
         {keys.map((k,key) =>  <KeyComponent handleKey={handleKey} key={key} k={k} />)}

@@ -1,8 +1,29 @@
 import PropTypes from 'prop-types';
 
 export function KeyComponent({k, handleKey}) {
+  let keyId = k[0];
+  switch (keyId) {
+    case '*':
+      keyId = 'Multiplication';
+      break;
+    case '/':
+      keyId = 'Division';
+      break;
+    case '+':
+      keyId = 'Plus';
+      break;
+    case '-':
+      keyId = 'Minius';
+      break;
+    case '.':
+      keyId = 'Point';
+      break;
+    case '=':
+      keyId = 'Equal';
+      break;
+  } 
   return (
-    <button onClick={()=>handleKey(k)} value={ k[0] } >{ k[1] }</button>
+    <button className='keysPanel__key' id={'key'+keyId} onClick={()=>handleKey(k)} value={ k[0] } >{ k[1] }</button>
   )
 }
 

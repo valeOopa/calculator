@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+
+#root{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to top, #222, #111);
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding-bottom: 10px;
+}
+#calculator__screen{
+    background: #2229;
+    text-align: right;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 40px;
+    width: 340px;
+    overflow-x:auto;
+    scrollbar-color:  #333 transparent;
+    scrollbar-width:thin;
+    margin-bottom: 6px;
+}
+
+#calculator__keysPanel{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    width: 340px;
+    height: 320px;
+}
+.keysPanel__key{
+    background: #000;
+    color: #FFF;
+    border: none;
+    font-size: 26px;
+}
+.keysPanel__key:hover{
+    cursor: pointer;
+    background: #0a0a0a;
+}
+#keyDEL,#keyRESET,#keyPlus,#keyMinius,#keyMultiplication,#keyDivision{
+    background: #ffb73c;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#keyDEL:hover,#keyRESET:hover,#keyPlus:hover,#keyMinius:hover,#keyMultiplication:hover,#keyDivision:hover{
+    background: #ffb73cdc;
+}
+#keyRESET,#keyDEL{
+    font-size: 22px;
+}
+
+#keyRESET{
+    grid-column: 1/3;
+}
+#keyEqual{
+    font-size: 40px;
+    grid-column: 3/5;
+    background: #ff9317
+}
+#keyEqual:hover{
+    background:#ee8206 ;
+}
